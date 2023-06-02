@@ -23,7 +23,7 @@ const KittyCard = () => {
   }
 
   return (
-    <div>
+    <>
       {cats.map((cat, index) => {
         const colors = ["#C16DF4", "#FA9C46", "#54BC5E", "#46A3FA"];
         const backgroundColors = colors[index];
@@ -51,7 +51,7 @@ const KittyCard = () => {
           </div>
         );
       })}
-    </div>
+    </>
   );
 };
 
