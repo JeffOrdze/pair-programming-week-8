@@ -1,8 +1,9 @@
 import "./MyBox.scss";
 import BoxItem from "../BoxItem/BoxItem";
 
-const MyBox = () => {
-    return(
+const MyBox = (props) => {
+     console.log(props)
+    return (
         <div className="my-box">
             <h2 className="my-box__title header-small">My Box</h2>
             <BoxItem />
