@@ -2,7 +2,8 @@ import "./KittyCard.scss";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const KittyCard = () => {
+const KittyCard = ({click}) => {
+
   const [cats, setCats] = useState(null);
 
   useEffect(() => {
@@ -21,6 +22,8 @@ const KittyCard = () => {
   if (!cats) {
     return <h1>Loading...</h1>;
   }
+
+
 
   return (
     <>
@@ -42,7 +45,7 @@ const KittyCard = () => {
                 </p>
                 <div className="kitty-card__bottom-div">
                   <p className="kitty-card__price paragraph">Price: ${cat.price}/day</p>
-                  <button className="kitty-card__button button-small" style={cardStyle}>
+                  <button onClick={click} className="kitty-card__button button-small" value={cat.id} style={cardStyle}>
                     Add to Box
                   </button>
                 </div>

@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
           <Link to="/checkout" className="header__link header__link-box">
             <li className="header__nav-item">Your Box</li>
-            <Badge variant="dot" color="warning">
+            <Badge badgeContent={2} color="warning">
               <img src={boxIcon} alt="box icon" />
             </Badge>
           </Link>

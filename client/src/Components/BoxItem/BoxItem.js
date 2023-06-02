@@ -4,14 +4,16 @@ import removeIcon from "../../assets/icons/remove-icon.svg";
 
 
 
-const BoxItem = () => {
+const BoxItem = ({state}) => {
+  console.log(state.data)
+  const {img, name } = state.data[0]
     return (
         <div className="box-item">
         <div className="box-item__container">
             <div className="box-item__img-container">
-                <img src={defaultCat} alt="cat" className="box-item__img"/>
+                <img src={img} alt="cat" className="box-item__img"/>
             </div>
-            <p className="box-item__name body-copy">Leon</p>
+            <p className="box-item__name body-copy">{name}</p>
         </div>
           
             <div className="box-item__price-container">
