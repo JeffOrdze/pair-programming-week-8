@@ -19,7 +19,7 @@ const Header = () => {
           <Link to="/cats" className="header__link">
             <li className="header__nav-item">Cats</li>
           </Link>
-          <Link to="/mybox" className="header__link header__link-box">
+          <Link to="/checkout" className="header__link header__link-box">
             <li className="header__nav-item">Your Box</li>
             <Badge variant="dot" color="warning">
               <img src={boxIcon} alt="box icon" />

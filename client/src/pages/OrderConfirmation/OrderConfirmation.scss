@@ -1,0 +1,21 @@
+@use "../../styles/partials/border.scss" as *;
+@use "../../styles/partials/boxShadow.scss" as *;
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+.order-confirmation {
+    @include flex(space-between);
+    padding: 4rem 8rem;
+    gap: 8rem;
+    &__card {
+        border: $border;
+        background-color: #fff;
+        padding: 3rem;
+        box-shadow: $divShadow;
+    }
+    &__img {
+        border: $border;
+        box-shadow: $divShadow;
+    }
+}
