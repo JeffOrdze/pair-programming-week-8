@@ -12,12 +12,14 @@ import "./App.scss";
 function App() {
 
 const [getCat, setGetCat] = useState([])
+const [addCat, setAddCat] = useState(false)
 
-const clickHandler = () => { 
+const clickHandler = (e) => { 
   const getCat = async () => { 
     try { 
-      const clickedCat = await axios.get('http://localhost:8080/checkout/${id}')
+      const clickedCat = await axios.get(`http://localhost:8080/cats/checkout/${e.target.value}`)
       setGetCat(clickedCat)
+      setAddCat(true)
     } catch(error) { 
       console.log(error)
     }
@@ -30,9 +32,8 @@ const clickHandler = () => {
     <Header/>
     <Routes>
       <Route path="/" element={<HomePage/>} />
-      <Route path="/cats" element={<OurKitties/>} />
-      <Route path="/mybox" element={<MyBox state={getCat}/>} />
-      <Route path="/checkout" element={<Checkout/>} />
+      <Route path="/cats" element={<OurKitties confirmation={addCat} state={getCat} click={clickHandler}/>} />
+      <Route path="/checkout" element={<Checkout state={getCat}/>} />
       <Route path="/confirmation" element={<OrderConfirmation/>} />
     </Routes>
     </BrowserRouter>

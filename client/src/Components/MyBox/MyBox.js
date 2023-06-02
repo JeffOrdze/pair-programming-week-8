@@ -1,12 +1,11 @@
 import "./MyBox.scss";
 import BoxItem from "../BoxItem/BoxItem";
 
-const MyBox = (props) => {
-     console.log(props)
+const MyBox = ({state}) => {
     return (
         <div className="my-box">
             <h2 className="my-box__title sub-header">My Box</h2>
-            <BoxItem />
+            <BoxItem state={state}/>
             <div className="my-box__total-div">
                 <p className="my-box__total body-copy">Total:</p>
                 <p className="my-box__price body-copy">$</p>
