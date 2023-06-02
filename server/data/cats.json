@@ -1,24 +1,28 @@
 [
     {
        "name": "Yenna",
+       "id": "1",
        "img": "http://localhost:8080/static/images/yenna-card-img.png",
        "description": "AKA Queen of Meowkness. Will patiently listen to your complaints. If you don’t pay enough attention to her, she may bite onto the corners of your screen.",
        "price": "150" 
     },
     {
         "name": "Luna",
+        "id": "2",
         "img": "http://localhost:8080/static/images/luna-card-img.png",
         "description": "Can untangle even the most difficult Node issues. Don’t leave your food unattended in her presence. Luna can consume your snacks faster than your code consumes promises.",
         "price": "150" 
      },
      {
         "name": "Simon",
+        "id": "3",
         "img": "http://localhost:8080/static/images/simon-card-img.png",
         "description": "Simon has 10 years of experience working in Big Tech (hence the tie). Very helpful with debugging your code as well as your house. Can represent you at all of the professional meetings (because of the tie).",
         "price": "150" 
      },
      {
         "name": "Leon",
+        "id": "4",
         "img": "http://localhost:8080/static/images/leon-card-img.png",
         "description": "Leon: The Professional. Can solve the unsolvable. Master of security. Rumor has it that he worked with Kevin Mitnick, but Leon never confirmed or denied that information.",
         "price": "150" 
