@@ -29,7 +29,7 @@ const clickHandler = (e) => {
 
   return (
     <BrowserRouter>
-    <Header/>
+    <Header state={getCat} />
     <Routes>
       <Route path="/" element={<HomePage/>} />
       <Route path="/cats" element={<OurKitties confirmation={addCat} state={getCat} click={clickHandler}/>} />

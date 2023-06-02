@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import boxIcon from "../../assets/icons/box-icon.svg";
 import Badge from "@mui/material/Badge";
 
-const Header = () => {
+const Header = ({state}) => {
+  console.log(state)
   return (
     <header className="header">
       <div className="header__logo-container">
@@ -21,7 +22,7 @@ const Header = () => {
           </Link>
           <Link to="/checkout" className="header__link header__link-box">
             <li className="header__nav-item">Your Box</li>
-            <Badge badgeContent={2} color="warning">
+            <Badge badgeContent={state.length !== 0 ? state.data.length : 0} color="warning">
               <img src={boxIcon} alt="box icon" />
             </Badge>
           </Link>
