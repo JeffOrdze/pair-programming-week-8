@@ -6,26 +6,26 @@ import Badge from '@mui/material/Badge';
 
 const Header = () => {
     return (
-        <header>
-            <div>
-                <img src={logo} alt="logo"/>
+        <header className="header">
+            <div className="header__logo-container">
+                <img src={logo} alt="logo" className="header__logo"/>
                 <h3>Rent-A-Kitty</h3>
             </div>
-            <nav>
-                <ul>
-                    <Link to="#">
-                        <li>Home</li>
+            <nav className="header__navbar">
+                <ul className="header__link-container">
+                    <Link to="#" className="header__link">
+                        <li className="header__nav-item">Home</li>
                     </Link>
-                    <Link to="#">
-                        <li>Cats</li>
+                    <Link to="#" className="header__link">
+                        <li className="header__nav-item">Cats</li>
                     </Link>
-                    <Link to="#">
-                        <li>Your Box</li>
+                    <Link to="#" className="header__link header__link-box">
+                        <li className="header__nav-item">Your Box</li>
                         <Badge variant="dot" color="warning">
                             <img src={boxIcon} alt="box icon"/>
                         </Badge>
                     </Link>
-                    <button>Checkout</button>
+                    <button className="header__button button">Checkout</button>
                 </ul>
             </nav>
         </header>

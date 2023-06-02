@@ -1,0 +1,8 @@
+@use "./styles/partials/colors.scss" as *;
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $yellow;
+    font-family: "Ubuntu";
+}

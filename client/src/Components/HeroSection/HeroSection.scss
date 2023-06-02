@@ -1,0 +1,23 @@
+@use "../../styles/partials/border.scss" as *;
+@use "../../styles/partials/boxShadow.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/global.scss" as *;
+
+
+.hero {
+    @include flex(space-between, center);
+    gap: 6rem;
+    padding: 4rem 8rem;
+    &__hero-copy {
+        border: $border;
+        background-color: #FFF;
+        padding: 2rem;
+        box-shadow: $divShadow;
+    }
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}

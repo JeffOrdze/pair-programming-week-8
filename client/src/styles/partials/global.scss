@@ -1,3 +1,6 @@
+@use "../partials/border.scss" as *;
+@use "../partials/boxShadow.scss" as *;
+
 .purple {
   background-color: #c16df4;
 }
@@ -9,4 +12,11 @@
 }
 .blue {
   background-color: #46a3fa;
+}
+
+.button {
+  width: 6rem;
+  padding: 0.5rem 1rem;
+  border: $border;
+  box-shadow: $smallButtonShadow;
 }

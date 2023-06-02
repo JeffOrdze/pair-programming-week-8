@@ -1,0 +1,37 @@
+@use "../../styles/partials/border.scss" as *;
+@use "../../styles/partials/boxShadow.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/global.scss" as *;
+
+
+.header {
+    padding: 0.5rem 8rem;
+    border-bottom: $border;
+    @include flex(space-between);
+    &__logo-container{
+        @include flex(space-between, center);
+        gap: 1rem;
+    }
+    &__logo {
+        width: 6rem;
+    }
+    &__link-container {
+         @include flex(space-evenly, center);
+         gap: 2.5rem;
+    }
+    &__link-box {
+        @include flex(space-between, center);
+        gap: 1rem;
+    }
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        list-style: none;
+        color: #000000;
+    }
+    &__button {
+        background-color: #C16DF4;
+    }
+}
