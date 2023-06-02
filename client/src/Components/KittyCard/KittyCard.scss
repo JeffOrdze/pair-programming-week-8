@@ -15,11 +15,13 @@
     padding: 20px;
     border-bottom: $border;
   }
-  &__card-body { 
-    padding: 20px;
-  }
+&__card-body { 
+    height: 180px;
+    padding: 10px 15px;
+    @include flex (space-between,normal,column)
+}
   &__bottom-div { 
-    @include flex(normal)
+    @include flex(space-between, center)
   }
 }
 

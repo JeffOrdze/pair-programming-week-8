@@ -33,7 +33,7 @@ const KittyCard = () => {
           <div className="kitty-card" key={cat.id}>
             <img src={cat.img} alt="cat" className="kitty-card__img" />
             <div className="kitty-card__copy">
-              <div className="kitty-card__name" style={cardStyle}>
+              <div className="kitty-card__name card-title" style={cardStyle}>
                 {cat.name}
               </div>
               <div className="kitty-card__card-body">
@@ -41,8 +41,8 @@ const KittyCard = () => {
                   {cat.description}
                 </p>
                 <div className="kitty-card__bottom-div">
-                  <p className="kitty-card__price">Price: ${cat.price}/day</p>
-                  <button className="kitty-card__button button" style={cardStyle}>
+                  <p className="kitty-card__price paragraph">Price: ${cat.price}/day</p>
+                  <button className="kitty-card__button button-small" style={cardStyle}>
                     Add to Box
                   </button>
                 </div>
