@@ -16,7 +16,7 @@ const HeroSection = () => {
             </section>
             <section className="hero__section-right">
                 <img src={heroImg} alt="screaming kitty"/>
-                <button className="hero__button button">Rent a Kitty</button>
+                <button className="hero__button button-large btnLarge">Rent a Kitty</button>
             </section>
         </main>
     )

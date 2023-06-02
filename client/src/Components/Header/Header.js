@@ -25,7 +25,7 @@ const Header = () => {
                             <img src={boxIcon} alt="box icon"/>
                         </Badge>
                     </Link>
-                    <button className="header__button button">Checkout</button>
+                    <button className="header__button button-small">Checkout</button>
                 </ul>
             </nav>
         </header>

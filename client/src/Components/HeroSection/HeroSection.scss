@@ -20,4 +20,11 @@
         font-size: 24px;
         font-weight: 700;
     }
+    &__section-right {
+        @include flex (space-between, center, column);
+        gap: 4rem;
+    }
+    &__button {
+        background-color:#FA9C46;
+    }
 }

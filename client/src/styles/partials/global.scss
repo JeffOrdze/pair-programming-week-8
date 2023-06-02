@@ -14,9 +14,16 @@
   background-color: #46a3fa;
 }
 
-.button {
+.button-small {
   width: 6rem;
   padding: 0.5rem 1rem;
+  border: $border;
+  box-shadow: $smallButtonShadow;
+}
+
+.button-large {
+  width: 12rem;
+  padding: 1rem 1rem;
   border: $border;
   box-shadow: $smallButtonShadow;
 }
