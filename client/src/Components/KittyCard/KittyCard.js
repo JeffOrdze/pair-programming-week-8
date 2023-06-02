@@ -6,15 +6,15 @@ import { useEffect, useState } from "react";
 const KittyCard = () => {
     const { cat, setCat } = useState([]);
 
-    useEffect( () => {
-        axios.get("http://localhost:8080/cats")
-        .then(response => {
-        console.log(response.data)
-        })
-        .catch(error) = () => {
-            console.log(error)
-        }
-    }, [])
+    // useEffect( () => {
+    //     axios.get("http://localhost:8080/cats")
+    //     .then(response => {
+    //     console.log(response.data)
+    //     })
+    //     .catch(error) = () => {
+    //         console.log(error)
+    //     }
+    // }, [])
     return (
         <div className="kitty-card">
             <img src={defaultCat} alt="cat"/>
