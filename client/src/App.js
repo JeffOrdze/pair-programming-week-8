@@ -4,7 +4,6 @@ import axios from "axios";
 import Header from "./Components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
 import OurKitties from "./pages/OurKitties/OurKitties";
-import MyBox from "./Components/MyBox/MyBox";
 import Checkout from "./pages/Checkout/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation/OrderConfirmation";
 import "./App.scss";
