@@ -12,6 +12,7 @@ const MyBox = ({state}) => {
             </div>
             <button className="my-box__button button-large btnLarge">Checkout</button>
         </div>
+    
     )
 }
 
