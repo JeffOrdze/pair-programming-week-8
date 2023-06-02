@@ -1,5 +1,18 @@
 @use "../partials/border.scss" as *;
 @use "../partials/boxShadow.scss" as *;
+@use "../partials/typography.scss" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
 
 .purple {
   background-color: #c16df4;
@@ -16,7 +29,8 @@
 
 .button-small {
   width: 6rem;
-  padding: 0.5rem 1rem;
+  height: 1.5625rem;
+  font-size: 12px;
   border: $border;
   box-shadow: $smallButtonShadow;
 }
