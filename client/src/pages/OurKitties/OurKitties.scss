@@ -1,0 +1,6 @@
+@import "../../styles/partials/mixins.scss";
+
+.our-kitties {
+@include flex(normal, center);
+flex-wrap: wrap;
+}

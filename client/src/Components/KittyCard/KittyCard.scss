@@ -1,0 +1,17 @@
+@import "../../styles/partials/mixins.scss";
+@import "../../styles/partials/typography.scss";
+@import "../../styles/partials/border.scss";
+@import "../../styles/partials/colors.scss";
+
+.kitty-card {
+  @include flex(normal);
+  border: $border;
+  width: 320px;
+  height: 210px;
+  &__img {
+    border-right: $border;
+  }
+  &__bottom-div { 
+    @include flex(normal)
+  }
+}

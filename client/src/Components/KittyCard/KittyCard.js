@@ -31,7 +31,7 @@ const KittyCard = () => {
         {cats.map(cat => {
             return(
             <div className="kitty-card" key={cat.id}>
-            <img src={cat.img} alt="cat"/>
+            <img src={cat.img} alt="cat" className="kitty-card__img"/>
             <div className="kitty-card__copy">
                 <div className="kitty-card__name">{cat.name}</div>
                 <div className="kitty-card__card-body">
