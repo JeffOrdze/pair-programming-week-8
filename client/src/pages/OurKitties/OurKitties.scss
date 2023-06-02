@@ -4,6 +4,7 @@
   @include flex(center, center);
   flex-wrap: wrap;
   gap: 64px;
+  padding-bottom: 42px;
   
   &__heading {
     text-align: center;
