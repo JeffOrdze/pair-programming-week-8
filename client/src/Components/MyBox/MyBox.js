@@ -1,5 +1,6 @@
 import "./MyBox.scss";
 import BoxItem from "../BoxItem/BoxItem";
+import { Link } from 'react-router-dom'
 
 const MyBox = ({state}) => {
     return (
@@ -10,7 +11,9 @@ const MyBox = ({state}) => {
                 <p className="my-box__total body-copy">Total:</p>
                 <p className="my-box__price body-copy">$150</p>
             </div>
-            <button className="my-box__button button-large btnLarge">Checkout</button>
+           <Link to="/confirmation"> 
+           <button className="my-box__button button-large btnLarge">Checkout</button>
+           </Link> 
         </div>
     
     )

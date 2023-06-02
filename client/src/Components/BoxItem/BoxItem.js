@@ -1,5 +1,4 @@
 import "./BoxItem.scss";
-import defaultCat from "../../assets/images/leon-card-img.png";
 import removeIcon from "../../assets/icons/remove-icon.svg";
 
 
@@ -22,6 +21,7 @@ const BoxItem = ({state}) => {
                 <img className="box-item__remove-icon" src={removeIcon} alt="remove icon"/>
             </div>
         </div>
+    
     )
   }
     
