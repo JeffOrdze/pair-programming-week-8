@@ -1,0 +1,6 @@
+@mixin flex($main-axis, $cross-axis: normal, $direction: row) {
+    display: flex;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+    flex-direction: $direction;
+  }

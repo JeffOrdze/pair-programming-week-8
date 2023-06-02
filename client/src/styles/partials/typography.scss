@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../../assets/fonts/Ubuntu-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../../assets/fonts/Ubuntu-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../../assets/fonts/Ubuntu-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../../assets/fonts/Ubuntu-Bold.ttf);
+    font-weight: 700;
+}
+
+.btnLarge { 
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+}
+
+.btnSmall { 
+font-weight: 500;
+font-size: 16px;
+line-height: 18px;
+}
+
+.body-copy { 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.page-header { 
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+}
+
+.sub-header { 
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.nav { 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
