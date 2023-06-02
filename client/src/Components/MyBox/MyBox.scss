@@ -1,0 +1,28 @@
+@use "../../styles/partials/border.scss" as *;
+@use "../../styles/partials/boxShadow.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/global.scss" as *;
+
+
+.my-box {
+    @include flex(space-between, normal, column);
+
+
+    &__title {
+        padding-left: 2rem;
+    }
+
+    &__total-div {
+        padding-left: 10rem;
+        padding-right: 2rem;
+        @include flex(space-between);
+    }
+    &__button {
+        width: 8rem;
+        align-self: flex-end;
+        background-color: #FA9C46;
+        margin: 2rem;
+    }
+}
