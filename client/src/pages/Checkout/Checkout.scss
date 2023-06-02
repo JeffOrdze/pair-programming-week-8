@@ -1,0 +1,22 @@
+@use "../../styles/partials/border.scss" as *;
+@use "../../styles/partials/boxShadow.scss" as *;
+@use "../../styles/partials/global.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+@use "../../styles/partials/typography.scss" as *;
+
+
+.checkout {
+    @include flex(space-between, center);
+    gap: 4rem;
+    padding: 4rem 8rem;
+    &__cat-img {
+        border: $border;
+        box-shadow: $divShadow;
+    }
+    &__wrapper {
+        border: $border;
+        background-color: #fff;
+        box-shadow: $divShadow;
+        flex-grow: 1;
+    }
+}

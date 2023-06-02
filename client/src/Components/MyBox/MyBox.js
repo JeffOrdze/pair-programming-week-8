@@ -5,13 +5,13 @@ const MyBox = (props) => {
      console.log(props)
     return (
         <div className="my-box">
-            <h2 className="my-box__title header-small">My Box</h2>
+            <h2 className="my-box__title sub-header">My Box</h2>
             <BoxItem />
             <div className="my-box__total-div">
-                <p className="my-box__total paragraph">Total:</p>
-                <p className="my-box__price paragraph">$</p>
+                <p className="my-box__total body-copy">Total:</p>
+                <p className="my-box__price body-copy">$</p>
             </div>
-            <button className="my-box__button">Checkout</button>
+            <button className="my-box__button button-large btnLarge">Checkout</button>
         </div>
     )
 }
