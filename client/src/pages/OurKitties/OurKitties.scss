@@ -4,3 +4,7 @@
 @include flex(normal, center);
 flex-wrap: wrap;
 }
+
+.our-kitties:nth-child(odd) { 
+    background: orange
+}
