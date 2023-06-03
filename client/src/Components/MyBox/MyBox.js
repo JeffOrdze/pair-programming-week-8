@@ -6,7 +6,7 @@ const MyBox = ({state}) => {
     return (
         <div className="my-box">
             <h2 className="my-box__title sub-header">My Box</h2>
-            <BoxItem state={state}/>
+           {state.data !== undefined ? <BoxItem state={state}/> : null}
             <div className="my-box__total-div">
                 <p className="my-box__total body-copy">Total:</p>
                 <p className="my-box__price body-copy">$150</p>

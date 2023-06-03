@@ -3,7 +3,6 @@ import KittyCard from "../../Components/KittyCard/KittyCard";
 
 
 const OurKitties = ( {click, confirmation} ) => {
-    console.log(confirmation)
     return (
         <>
         <h2 className="our-kitties__heading sub-header">Our Kitties</h2>

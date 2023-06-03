@@ -5,7 +5,6 @@ import boxIcon from "../../assets/icons/box-icon.svg";
 import Badge from "@mui/material/Badge";
 
 const Header = ({state}) => {
-  console.log(state)
   return (
     <header className="header">
       <div className="header__logo-container">
