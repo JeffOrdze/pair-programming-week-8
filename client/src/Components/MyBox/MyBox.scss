@@ -19,9 +19,11 @@
         padding-right: 2rem;
         @include flex(space-between);
     }
+    &__button-link {
+        align-self: flex-end;
+    }
     &__button {
         width: 8rem;
-        align-self: flex-end;
         background-color: #FA9C46;
         margin: 2rem;
     }

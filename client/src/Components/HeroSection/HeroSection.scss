@@ -21,7 +21,7 @@
         font-weight: 700;
     }
     &__section-right {
-        @include flex (space-between, center, column);
+        @include flex (space-between, flex-end, column);
         gap: 4rem;
     }
     &__button {
