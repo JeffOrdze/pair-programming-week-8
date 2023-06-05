@@ -23,8 +23,6 @@ const KittyCard = ({click}) => {
     return <h1>Loading...</h1>;
   }
 
-
-
   return (
     <>
       {cats.map((cat, index) => {

@@ -26,7 +26,7 @@ const Header = ({state}) => {
             </Badge>
           </Link>
           <Link to="/checkout">
-          <button className="header__button button-small">Checkout</button>
+          <button className="header__button button-medium">Checkout</button>
           </Link>
         </ul>
       </nav>

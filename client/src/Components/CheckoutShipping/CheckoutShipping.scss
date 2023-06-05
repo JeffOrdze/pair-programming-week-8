@@ -4,3 +4,66 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
 @use "../../styles/partials/global.scss" as *;
+
+
+.checkout-shipping {
+    @include flex(space-between, center);
+    gap: 8rem;
+    padding: 3rem 8rem;
+    &__img {
+        border: $border;
+        box-shadow: $divShadow;
+    }
+    &__form-container {
+        border: $border;
+        box-shadow: $divShadow;
+        background-color: #fff;
+        flex-grow: 1;
+        padding: 1.25rem 2.5rem;
+    }
+    &__form {
+        @include flex(normal, normal, column);
+    }
+    &__subtitle {
+        font-size: 1.5rem;
+    }
+    &__title,
+    &__subtitle {
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+    &__name-div,
+    &__postal-city-container {
+        @include flex(space-between, center);
+        gap: 2rem;
+    }
+    &__first-name,
+    &__last-name,
+    &__email-container,
+    &__address,
+    &__postal-code,
+    &__city {
+        @include flex (flex-start, normal, column);
+        flex-grow: 1;
+    }
+    &__input-field {
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: $border;
+        background-color: #FFFDF2;
+        &:focus {
+            background-color: #FAF4D6;
+            outline: none;
+            box-shadow: $divShadow;
+            transition: 0.25s ease-in-out;
+        }
+    }
+    &__button-link {
+        align-self: flex-end;
+    }
+    &__button {
+        margin-top: 1rem;
+        background-color: #FA9C46;
+    }
+}
