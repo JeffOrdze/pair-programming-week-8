@@ -1,16 +1,15 @@
 import "./Checkout.scss";
-import catInABox from "../../assets/images/cat-in-a-box-checkout.png";
-import MyBox from "../../Components/MyBox/MyBox";
+import catShipping from "../../assets/images/shipping-cat.png";
+import { Outlet } from "react-router-dom";
 
-
-const Checkout = ({state}) => {
+const Checkout = () => {
     return (
-        <div className="checkout">
-            <img src={catInABox} alt="cat in a box" className="checkout__cat-img"/>
-            <div className="checkout__wrapper">
-                <MyBox state={state}/>
+        <section className="checkout-shipping">
+            <div className="checkout-shipping__img-container">
+                <img src={catShipping} alt="cat in a box" className="checkout-shipping__img"/>
             </div>
-        </div>
+            <Outlet/>
+        </section>
     )
 }
 

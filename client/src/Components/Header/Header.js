@@ -19,13 +19,13 @@ const Header = ({state}) => {
           <Link to="/cats" className="header__link">
             <li className="header__nav-item">Cats</li>
           </Link>
-          <Link to="/checkout" className="header__link header__link-box">
+          <Link to="/mybox" className="header__link header__link-box">
             <li className="header__nav-item">Your Box</li>
             <Badge badgeContent={state.length !== 0 ? state.data.length : 0} color="warning">
               <img src={boxIcon} alt="box icon" />
             </Badge>
           </Link>
-          <Link to="/checkout">
+          <Link to="/mybox">
           <button className="header__button button-medium">Checkout</button>
           </Link>
         </ul>

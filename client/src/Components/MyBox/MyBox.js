@@ -17,7 +17,7 @@ const MyBox = ({state}) => {
                     (<p className="my-box__price body-copy">$0</p>)
                 }
             </div>
-           <Link to="/shipping" className="my-box__button-link"> 
+           <Link to="/checkout/shipping" className="my-box__button-link"> 
            <button className="my-box__button button-large btnLarge">Checkout</button>
            </Link> 
         </div>
